@@ -1,52 +1,88 @@
-# Stock Prediction Project
+# 🍎 Apple Stock Analysis & Prediction Dashboard
 
-This project provides a simple Python-based solution to predict future stock closing prices using historical data.
+An interactive dashboard for analyzing historical **Apple (AAPL)** stock data and predicting future prices using **Python**, **Streamlit**, and **Machine Learning** techniques.
 
-## Features
+---
 
-* Predict closing prices for a given stock ticker symbol using Linear Regression.
-* Specify the number of future days to forecast.
-* Outputs predictions in a clear tabular format.
-* Easy to run locally without needing an API.
+## 📌 Project Overview
 
-## Requirements
+This project aims to:
 
-* Python 3.10+
-* Libraries:
+* Analyze historical stock price movements of Apple (AAPL)
+* Visualize data using interactive charts and dashboards
+* Train a machine learning model to predict future stock prices
+* Help users understand general market trends (educational purposes only)
 
-  * yfinance
-  * pandas
-  * numpy
-  * scikit-learn
+---
 
-Install the required libraries using:
+## 🛠️ Tech Stack
+
+* **Python 3**
+* **Streamlit** – Interactive web dashboard
+* **Yahoo Finance (yfinance)** – Stock data source
+* **Pandas & NumPy** – Data processing
+* **Matplotlib & Plotly** – Data visualization
+* **Scikit-learn** – Machine Learning
+* **Random Forest Regressor** – Prediction model
+
+---
+
+## ✨ Features
+
+* 📄 Full historical stock data view
+* 📊 Advanced Exploratory Data Analysis (EDA)
+* 📈 Interactive charts for price & volume
+* 🤖 Future price prediction (7–90 days)
+* ⚙️ Adjustable model complexity
+* 📥 Export data & predictions as CSV
+* 🎨 Clean and modern UI with custom CSS
+
+---
+
+## 🧠 Machine Learning Model
+
+* Algorithm: **Random Forest Regressor**
+* Data split: **80% training – 20% testing**
+* Evaluation metrics:
+
+  * R² Score
+  * RMSE
+  * MAPE
+
+> ⚠️ Predictions are based solely on historical data and are **not financial advice**.
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
 
 ```bash
-pip install yfinance pandas numpy scikit-learn
+pip install streamlit yfinance pandas numpy matplotlib seaborn plotly scikit-learn textblob
 ```
 
-## Usage
+### 2️⃣ Run the Application
 
-1. Download the repository or copy the Python script.
-2. Run the Python script in your local environment.
-3. Provide the stock ticker and number of days to predict.
-
-### Example
-
-```python
-from stock_prediction import predict_next_month
-
-predictions = predict_next_month('AAPL', days=30)
-print(predictions)
+```bash
+streamlit run main.py
 ```
 
-This will output a DataFrame with predicted closing prices for the next 30 days.
+### 3️⃣ Usage Steps
 
-## Notes
+1. Select the desired date range from the sidebar
+2. Choose analysis and prediction options
+3. Click **🚀 Start Analysis**
+4. Explore insights, charts, and predictions
 
-* Predictions are based on historical data using a simple Linear Regression model.
-* This is for educational purposes and not financial advice.
+---
 
-## License
+## 📂 Project Structure
 
-MIT License
+```text
+📁 Apple-Stock-Analysis
+│
+├── main.py        # Main Streamlit application
+├── README.md      # Project documentation
+```
+
+
